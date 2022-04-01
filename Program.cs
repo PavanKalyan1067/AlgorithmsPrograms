@@ -51,12 +51,10 @@ namespace AlgorithmPrograms
                         Console.WriteLine("Enter the valid option!");
                         break;
                 }
+
                 Console.WriteLine("\nDo you want to continue");
                 flag = Console.ReadLine();
             }
-
-
-
         }
     }
 }
