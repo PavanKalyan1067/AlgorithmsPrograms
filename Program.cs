@@ -24,6 +24,7 @@ namespace AlgorithmPrograms
                 Console.WriteLine("7.Prime number in range");
                 Console.WriteLine("Enter the option");
                 Console.WriteLine("8.Prime numbers with anagrams and palindrome");
+                Console.WriteLine("9.Finding Number using binary search concept");
                 int num = Convert.ToInt32(Console.ReadLine());
                 switch (num)
                 {
@@ -89,6 +90,9 @@ namespace AlgorithmPrograms
                         {
                             Console.WriteLine("Number is not a palindrome");
                         }
+                        break;
+                    case 9:
+                        FindNumber.ThinkNumber();
                         break;
 
                     default:
