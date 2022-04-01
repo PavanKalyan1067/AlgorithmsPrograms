@@ -25,6 +25,7 @@ namespace AlgorithmPrograms
                 }
             }
         }
+
         public static void PrintArray(int[] arr)
         {
             Console.WriteLine("The Sorted array Using Bubble Sort : ");

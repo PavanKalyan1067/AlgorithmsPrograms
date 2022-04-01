@@ -17,6 +17,7 @@ namespace AlgorithmPrograms
             Console.WriteLine("Enter the word to be searched in list");
             string key = Console.ReadLine();
 
+
             while (start <= end)
             {
                 mid = (start + end) / 2;

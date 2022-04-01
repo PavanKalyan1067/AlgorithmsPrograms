@@ -25,6 +25,7 @@ namespace AlgorithmPrograms
             }
 
         }
+
         public static string Swap(string word, int start, int end)
         {
             char temp;
