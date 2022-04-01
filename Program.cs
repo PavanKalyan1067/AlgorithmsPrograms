@@ -17,6 +17,8 @@ namespace AlgorithmPrograms
             {
                 Console.WriteLine("1.Permutation Using Recursion");
                 Console.WriteLine("2.Binary Search the word from wordlist");
+                Console.WriteLine("3.Insertion Sort");
+                Console.WriteLine("4.Bubble Sort");
                 Console.WriteLine("Enter the option");
                 int num = Convert.ToInt32(Console.ReadLine());
                 switch (num)
@@ -29,18 +31,32 @@ namespace AlgorithmPrograms
                         break;
                     case 2:
                         string txtpath = File.ReadAllText(@"algo.txt");
-                        List<string> words = new List<string>(txtpath.Split());
+                        List<string> words = new List<string>(txtpath.Split(" "));
                         words.Sort();
                         BinarySearch.BinarySearchWord(words);
                         break;
+                    case 3:
+                        InsertionSort insertionSort = new InsertionSort();
+                        int[] arr = { 10, 2, 14, 3, 1, 5, 9 };
+                        insertionSort.Sort(arr);
+                        insertionSort.PrintArray(arr);
+                        break;
+                    case 4:
+                        int[] arr1 = { 10, 2, 14, 3, 1, 5, 9 };
+                        BubbleSort.BubbleSortInArray(arr1);
+                        BubbleSort.PrintArray(arr1);
+                        break;
+
                     default:
                         Console.WriteLine("Enter the valid option!");
                         break;
-
                 }
                 Console.WriteLine("\nDo you want to continue");
                 flag = Console.ReadLine();
             }
+
+
+
         }
     }
 }
