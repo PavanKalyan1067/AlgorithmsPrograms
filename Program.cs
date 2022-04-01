@@ -25,6 +25,7 @@ namespace AlgorithmPrograms
                 Console.WriteLine("Enter the option");
                 Console.WriteLine("8.Prime numbers with anagrams and palindrome");
                 Console.WriteLine("9.Finding Number using binary search concept");
+                Console.WriteLine("10.Displaying message using regular expression");
                 int num = Convert.ToInt32(Console.ReadLine());
                 switch (num)
                 {
@@ -93,6 +94,9 @@ namespace AlgorithmPrograms
                         break;
                     case 9:
                         FindNumber.ThinkNumber();
+                        break;
+                    case 10:
+                        MessageDemoUsingRegex.DisplayMessage();
                         break;
 
                     default:
